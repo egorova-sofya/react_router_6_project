@@ -10,10 +10,11 @@ import Createpost from "./pages/Createpost.tsx";
 import Editpost from "./pages/Editpost.tsx";
 import Loginpage from "./pages/Loginpage.tsx";
 import RequireAuth from "./hoc/RequireAuth.tsx";
+import AuthProvider from "./hoc/AuthProvider.tsx";
 
 function App() {
   return (
-    <>
+    <AuthProvider>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Homepage />} />
@@ -34,7 +35,7 @@ function App() {
           <Route path="*" element={<Notfoundpage />} />
         </Route>
       </Routes>
-    </>
+    </AuthProvider>
   );
 }
 

@@ -1,8 +1,8 @@
 import React from "react";
 import { Link, NavLink, Outlet } from "react-router-dom";
+import s from "./Layout.module.css";
 // @ts-ignore
 import CustomLink from "../CustomLink/CustomLink.tsx";
-import s from "./Layout.module.css";
 
 const Layout = () => {
   return (

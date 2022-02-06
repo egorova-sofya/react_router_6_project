@@ -3,7 +3,10 @@ import { Link, useMatch } from "react-router-dom";
 import s from "./CustomLink.module.css";
 
 const CustomLink = ({ children, to, ...props }) => {
-  const match = useMatch(to);
+  const match = useMatch({
+    path: to,
+    end: to.length === 1,
+  });
 
   return (
     <>

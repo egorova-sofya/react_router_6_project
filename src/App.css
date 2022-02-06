@@ -19,16 +19,11 @@
   align-items: center;
 }
 
-.HeaderLink {
-  color: #fff;
-  font-size: 30px;
-  text-decoration: none;
-  text-align: center;
-  width: 90px;
-  padding: 1.2rem 0;
+.activeLink {
+  cursor: default;
+  color: #1985a1;
 }
 
-.HeaderLink:hover {
-  border-bottom: 3px solid #fff;
-  margin-bottom: -3px;
+.activeLink:hover {
+  border-bottom: 3px solid #1985a1;
 }
